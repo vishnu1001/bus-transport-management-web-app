@@ -16,7 +16,7 @@ if(!$conn)
 $mail=$_POST['mail'];
 $pass=$_POST['pass'];
 
-$sql="INSERT INTO registered (email,pass_word) VALUES ('$email','$pass')";
+$sql="INSERT INTO registered (email,pass_word) VALUES ('$mail','$pass')";
 
 if(mysqli_query($conn,$sql))
 {
