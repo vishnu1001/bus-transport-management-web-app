@@ -8,15 +8,13 @@
 
 .amrita-logo
 {
-    width: 50%;
-    height: 50px;
-    background-image: url('assets/logo.png');
+    width: 210px;
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
 
     margin-top: 50px;
-    margin-left: 70px;
+    margin-left: 50px;
     
     cursor: pointer;
 }
@@ -26,7 +24,6 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url('images/wallpaper0.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
