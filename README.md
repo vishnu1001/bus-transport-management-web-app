@@ -27,7 +27,7 @@ New Branches
 
 Steps:
 
-> Stage changes
-> Commit changes
-> push (or) pull
+1. Stage changes
+2. Commit changes
+3. push (or) pull
 
