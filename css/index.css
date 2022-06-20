@@ -29,23 +29,23 @@
 
 h3
 {
-    margin-top: 40%;
+    margin-top: 30%;
     margin-left: 30px;
 }
 
 .nav
 {
-    margin-top: 30%;
-    margin-left: 85px;
+    margin-top: 20%;
+    margin-left: 30px;
 }
 
 .btn
 {
     height: 50px;
-    width: 70%;
+    width: 90%;
 
     border-radius: 10px;
-    background-color: white;
+    background-color: #F7F5F2;
     border-style: none;
 }
 
@@ -58,6 +58,7 @@ h3
 
 .profile
 {
+    margin-top: 90px;
     margin-left: 32%;
 }
 
@@ -79,6 +80,13 @@ h3
     right: 0;
     position: absolute;
     background-color: beige;
+}
+
+.map-img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .floating
@@ -106,6 +114,7 @@ h3
     margin-top: 30px;
     position: absolute;
     margin-right: 20%;
+    
     right: 0px;
 }
 

@@ -15,11 +15,18 @@
 </head>
 <body>
     <div class="container">
-        <form class="form" action="" method="post">
 
-            <p>Email</p><input type="text" placeholder="Email" name="mail">
-            <p>Name</p><input type="text" placeholder="First Name" name="name">
-            <p>Course</p>
+        <center><h1>Create an Account</h1></center>
+        <center><p>Already have an account?</p> <a class="sign-in" href="login.html">Sign in</a> </center>
+        <center>
+        <form class="form" action="" method="post">
+            <!--<p>Email</p>-->
+            <input class="input-field" type="text" placeholder="Email" name="mail"> <br>
+            <!--<p>Name</p>-->
+            <input class="input-field" type="text" placeholder="First Name" name="name"> <br>
+            <!--<p>Register Number</p>-->
+            <input class="input-field" type="text" placeholder="Roll No" name="reg"> <br>
+            <!--<p>Course</p>-->
             <select class="drop-down" name="course" id="1">
                 <option value="0" selected> [Choose Course] </option>
                 <option value="1">B.Com</option>
@@ -41,13 +48,15 @@
                 <option value="17">Integrated BCA-MCA</option>
                 <option value="18">Integrated B.Sc-M.Sc [VC]</option>
                 <option value="19">Integrated B.Sc-M.Sc [Chem]</option>
-            </select>
-            <p>Register Number</p><input type="text" placeholder="Roll No" name="reg">
-            <p>Semester</p><input type="text" placeholder="Semester" name="sem">
-            <p>Home Address</p><input type="text" placeholder="Home Address" name="addr"> <br> <br>
-            <input class="submit-btn" type="submit" value="Sign Up">
-            
+            </select> <br>
+            <!--<p>Semester</p>-->
+            <input class="input-field" type="text" placeholder="Semester" name="sem"> <br>
+            <!--<p>Password</p>-->
+            <input class="input-field" type="password" placeholder="Password"> <br> 
+            <input class="submit-btn" type="submit" value="Sign Up >">
         </form>
+        </center>
+        
     </div>
     
 </body>
