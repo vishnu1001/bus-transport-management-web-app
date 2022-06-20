@@ -47,6 +47,7 @@ h3
     border-radius: 10px;
     background-color: #F7F5F2;
     border-style: none;
+    cursor: pointer;
 }
 
 .btn:hover
