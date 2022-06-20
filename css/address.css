@@ -24,17 +24,17 @@ h1
     margin-left: 40px;
 }
 
+.form
+{
+    margin-top: 60px;
+}
+
 p
 {
     font-weight: lighter;
     text-align: left;
     margin-left: 31%;
     margin-bottom: 2px;
-}
-
-.form
-{
-    margin-top: 60px;
 }
 
 .input-field
@@ -46,14 +46,6 @@ p
     height: 50px;
     border-radius: 15px;
     text-align: center;
-}
-
-.form i
-{
-    margin-left: 36%;
-    margin-top: 17px;
-    position: absolute;
-    
 }
 
 .btn
@@ -74,52 +66,4 @@ p
     background-color: white;
     color: black;
     transition: 0.2s;
-}
-
-.add-btn
-{
-    width: 40%;
-    height: 50px;
-    border: 3px solid black;
-    border-radius: 15px;
-    background-color: white;
-    color: black;
-
-    cursor: pointer;
-
-}
-
-.add-btn:hover
-{
-    background-color: black;
-    color: white;
-    transition: 0.2s;
-}
-
-.logout
-{
-    width: 70px;
-    height: 70px;
-    margin-top: 10px;
-    margin-right: 10px;
-    border-radius: 20px;
-    text-align: center;
-    float: right;
-    font-size: 30px;
-    background-color: white;
-    color: #FF5D5D;
-
-    cursor: pointer;
-}
-
-.logout:hover
-{
-    color: white;
-    background-color: #FF5D5D;
-    transition: 0.2s;
-}
-
-.logout i
-{
-    padding-top: 22px;
 }
