@@ -22,10 +22,10 @@ h1
     border-radius: 20px;
     background-color:white;
     width: 60%;
-    height: 680px;
+    height: 100%;
     margin: auto;
-    margin-top: 3%;
-    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
     box-shadow: 0px 0px 80px rgba(0,0,0,0.20);
 }
 
@@ -39,10 +39,17 @@ p
     left: 0px;
 }
 
+.details1
+{
+    position:inherit;
+    right: 0px;
+    top: 0px;
+}
+
+
 .input-field, .drop-down
 {
     margin-bottom: 20px;
-    /*border: 2.2px solid black; */
     border-style: none;
     background-color: #F2F2F2;
     width: 40%;
@@ -53,7 +60,7 @@ p
 
 .submit-btn
 {
-
+    margin-bottom: 5%;
     text-align: center;
     width: 40%;
     height: 50px;
