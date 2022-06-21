@@ -21,7 +21,7 @@
     $course=$_POST['course'];
     $sem=$_POST['sem'];
 
-    $sql="INSERT INTO registered (email,student_name,pass_word,reg_no,course,sem,) VALUES ('$mail','$name','$pass','$reg','$course','$sem')";
+    $sql="INSERT INTO registered (email,student_name,pass_word,reg_no,course,sem) VALUES ('$mail','$name','$pass','$reg','$course','$sem')";
 
     if(mysqli_query($conn,$sql))
     {
