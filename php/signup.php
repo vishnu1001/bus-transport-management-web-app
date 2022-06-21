@@ -1,7 +1,7 @@
 
 <?php
 
-    $servername="";
+    $servername="localhost";
     $username="root";
     $password="";
     $db="amrita_bus";
@@ -15,9 +15,13 @@
     }
 
     $mail=$_POST['mail'];
+    $name=$_POST['name'];
     $pass=$_POST['pass'];
+    $reg=$_POST['reg'];
+    $course=$_POST['course'];
+    $sem=$_POST['sem'];
 
-    $sql="INSERT INTO registered (email,pass_word) VALUES ('$mail','$pass')";
+    $sql="INSERT INTO registered (email,student_name,pass_word,reg_no,course,sem) VALUES ('$mail','$name','$pass','$reg','$course','$sem')";
 
     if(mysqli_query($conn,$sql))
     {
