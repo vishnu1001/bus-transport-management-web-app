@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container
@@ -12,7 +13,7 @@
 
 .amrita-logo
 {
-    
+    position: absolute;
     width: 210px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -27,7 +28,7 @@
 .background-img
 {
     width: 100%;
-    position: absolute;
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,9 +36,9 @@
 
 .login
 {
-    
+    position: absolute;
+    right: 0px;
     margin-right: 50px;
-    float: right;
     text-align: center;
 }
 
@@ -53,6 +54,12 @@
     width: 170px;
 }
 
+.login-btn:hover
+{
+    transition: 0.5s;
+    box-shadow: 0px 0px 30px rgba(11, 81, 230, 1);
+}
+
 .nav
 {
     margin-top: 50px;
@@ -63,7 +70,8 @@
 .nav-btn
 {
     cursor: pointer;
-    border: 2px solid white;
+    border-style: none;
+    border-color: transparent;
     background-color: transparent;
     border-radius: 15px;
     margin-left: 20px;
@@ -87,14 +95,14 @@
 
 .started
 {
-    height: 700px;
-    position: relative;
+    position: absolute;
+    margin-top: 43%;
+    margin-left: 13%;
 }
 
 .started-btn, .learn-btn
 {
     cursor: pointer;
-    position: absolute;
     border-radius: 15px;
     border-style: none;
     border-color: transparent;
@@ -108,19 +116,69 @@
 
 .learn-btn
 {
+    margin-left: 20px;
     background-color: transparent;
     left: 400px;
 }
 
+.amrita-btn
+{
+    cursor: pointer;
+    margin-left: 590px;
+    border-radius: 15px;
+    color: white;
+    border-style: none;
+    border-color: transparent;
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    bottom: 0px;
+    right: 170px;
+}
+
 .started-btn:hover
 {
+    box-shadow: 0px 0px 50px rgb(11, 81, 230);
     transition: 0.5s;
-    box-shadow: 0px 0px 30px rgba(11, 81, 230, 1);
 }
 
-.learn-btn:hover
+.learn-btn:hover, .amrita-btn:hover, .nav-btn:hover
 {
-    transition: 0.5s;
     border: 2px solid white;
+    transition: 0.3s;
 }
 
+.fa
+{
+   margin-left: 10px;
+}
+
+.container2
+{
+    height: 510px;
+}
+
+.about
+{
+    border-radius: 30px;
+    padding: 90px;
+    margin-top: 160px;
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+
+}
+
+.fa-solid
+{
+    font-size: 70px;
+    margin-top: 150px;
+    color: #0B51E6;
+}
+
+.fa-solid:hover
+{
+    color: black;
+}
