@@ -167,8 +167,7 @@
     width: 80%;
     font-size: 20px;
     
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
-
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3);
 }
 
 .fa-solid
