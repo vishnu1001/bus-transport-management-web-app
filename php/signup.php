@@ -30,7 +30,22 @@
 
     if(mysqli_query($conn,$sql))
     {
-            echo " You've successfully registered to Amrita bus facilities"; 
+            printf("
+            
+            <html>
+            <head>
+            <meta http-equiv=\"refresh\" content=\"2;url=../homepage.html\">
+            </head>
+            <body>
+                <center>
+                    <br>
+                    <h1>Successfully Registered</h1> <br>
+                    <p>Opening Dashboard in 2 seconds...</p>
+                </center>
+            </body>
+            </html>
+
+            ");
     }
     else
     {

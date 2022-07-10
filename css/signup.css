@@ -51,10 +51,10 @@ p
 {
     margin-bottom: 20px;
     border-style: none;
+    border-radius: 15px;
     background-color: #e0e0e0;
     width: 40%;
     height: 50px;
-    border-radius: 15px;
     text-align: center;
 }
 
