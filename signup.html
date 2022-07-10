@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/signup.css">
 
-    <script src="js/signup.js"></script>
     <script src="https://kit.fontawesome.com/f6ec98831b.js" crossorigin="anonymous"></script>
+    <script src="js/signup.js"></script>
     <title>Sign Up | Bus Management</title>
 </head>
 <body>
@@ -19,12 +19,12 @@
         <h1>Create an Account</h1>
         <p>Already have an account? <a class="sign-in" href="login.html">Sign in</a></p>
 
-        
-        <form name="form" class="form" method="post" action="php/signup.php" onsubmit="return validate();">
+        <form name="form" class="form" action="php/signup.php" method="post">
             <div class="details">
-                <input class="input-field" type="text" placeholder="Email" name="mail" id="mail"><br>
-                <input class="input-field" type="text" placeholder="First Name" name="name" id="name"> <br>
-                <input class="input-field" type="text" placeholder="Roll No" name="reg" id="reg"> <br>
+                <input class="input-field" type="text" placeholder="Email" name="mail"><br>
+                
+                <input class="input-field" type="text" placeholder="First Name" name="name"> <br>
+                <input class="input-field" type="text" placeholder="Roll No" name="reg"> <br>
                 <select class="drop-down" name="course" id="1">
                     <option value="0" selected> [Choose Course] </option>
                     <option value="B.Com">B.Com</option>
@@ -47,21 +47,19 @@
                     <option value="Integrated B.Sc-M.Sc [VC]">Integrated B.Sc-M.Sc [VC]</option>
                     <option value="Integrated B.Sc-M.Sc [Chem]">Integrated B.Sc-M.Sc [Chem]</option>
                 </select> <br>
-                <input class="input-field" type="text" placeholder="Semester" name="sem" id="sem" pattern="[1-6]" title="Bus available only till 6th Semester"> <br>
-                <input class="input-field" type="password" placeholder="Password" name="pass" id="pass"> <br> 
+                <input class="input-field" type="text" placeholder="Semester" name="sem"> <br>
+                <input class="input-field" type="password" placeholder="Password" name="pass"> <br> 
             </div>
-
+    
             <div class="details">
                 <h1>Address Details</h1>
-                <input class="input-field" type="text" placeholder="Door No" name="door_no" id="door_no"> <br>
-                <input class="input-field" type="text" placeholder="Street Name" name="street_name" id="street_name"> <br>
-                <input class="input-field" type="text" placeholder="Landmark" name="landmark" id="landmark"> <br>
-                <input class="input-field" type="text" placeholder="Pincode" name="pincode"id="pincode" pattern="[0-9]{6,}" title="Wrong Format # # # # # #"> <br>
+                <input class="input-field" type="text" placeholder="Door No" name="door_no"> <br>
+                <input class="input-field" type="text" placeholder="Street Name" name="street_name"> <br>
+                <input class="input-field" type="text" placeholder="Landmark" name="landmark"> <br>
+                <input class="input-field" type="text" placeholder="Pincode" name="pincode"> <br>
             </div>
 
             <input class="submit-btn" type="submit" value="Sign Up >">
-
-            <p style="color: red;" id="error" ></p> <br>
         </form>
         </center>
     </div>
