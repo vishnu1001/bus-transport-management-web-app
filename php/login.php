@@ -28,6 +28,4 @@ else
    // echo "<a href= \"create.html\"> No user? Create an account! </a>";
 }  
 
-
-  
 ?>
