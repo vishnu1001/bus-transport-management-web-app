@@ -45,7 +45,7 @@ h3
     width: 90%;
 
     border-radius: 10px;
-    background-color: #F7F5F2;
+    background-color: #dbdbdb;
     border-style: none;
     cursor: pointer;
 }
@@ -168,12 +168,21 @@ h3
 
 .call-btn
 {
+    cursor: pointer;
     height: 50px;
     width: 120px;
     border-style: none;
     border-radius: 50px;
     background-color: #0B51E6;
     color: white;
+}
+
+.call-btn:hover
+{
+    transition: 0.2s;
+    border: 3px solid black;
+    color: black;
+    background-color: white;
 }
 
 

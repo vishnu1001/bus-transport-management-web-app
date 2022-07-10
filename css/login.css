@@ -98,6 +98,7 @@ p
 
 .google-signin
 {
+    margin-left: 163px;
     border: 3px solid black;
     background-color: white;
     text-align: center;
@@ -120,7 +121,7 @@ p
 
 .no-account
 {
-    margin-left: 40px;
+    margin-left: 210px;
     font-weight: lighter;
 }
 
