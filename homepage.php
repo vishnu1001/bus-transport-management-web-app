@@ -1,3 +1,7 @@
+<?php
+    include "php/session.php";    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +36,7 @@
                 <a href="comingsoon.html">
                     <button class="btn" >Rules and Regulations</button> <br> <br>
                 </a>
-                <a href="settings.html">
+                <a href="settings.php">
                     <button class="btn" >Settings</button>
                 </a>
                 

@@ -1,3 +1,7 @@
+<?php
+    include "php/session.php";    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +39,7 @@
         </form>
 
         <br><br>
-        <a href="address.html" target="_blank">
+        <a href="address.php">
             <button class="add-btn" >Update Address ></button>
         </a>
         </center>

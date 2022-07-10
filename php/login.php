@@ -23,9 +23,7 @@
     $count = mysqli_num_rows($res);
 
     if($count)
-    {
-        ///echo "<h1> LOGGED IN! </h1>";
-        
+    {   
         if(isset($_SESSION['mail']))
         {
             print("Loggin in...");
@@ -33,7 +31,7 @@
             
             <html>
                 <head>
-                    <meta http-equiv=\"refresh\" content=\"1;url=../homepage.html\">
+                    <meta http-equiv=\"refresh\" content=\"1;url=../homepage.php\">
                 </head>
             </html>
             

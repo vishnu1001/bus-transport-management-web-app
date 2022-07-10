@@ -5,12 +5,21 @@
 
     if(isset($_SESSION['mail']))
     {
+        print("Logout...");
+            print("
+            
+            <html>
+                <head>
+                    <meta http-equiv=\"refresh\" content=\"1;url=../login.html\">
+                </head>
+            </html>
+            
+            ");
         session_destroy();
-        print("<script> location.href='login.html' </script>");
     }
     else
     {
-        print("<script> location.href='login.html' </script>");
+        print("<script> location.href='../login.html' </script>");
     }
 
 ?>
