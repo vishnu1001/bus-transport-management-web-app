@@ -44,7 +44,12 @@
             <br> <br> <br> <br>
             
             <div class="profile">
-                <p class="std-name" >Student Name</p>
+                <p class="std-name" >
+                    <?php 
+                        print($result1);
+                    ?>
+                    Student Name
+                </p>
                 <p class="std-roll" >MY.SC.I5MCA20**</p>
             </div>
         </div>
