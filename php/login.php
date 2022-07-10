@@ -25,7 +25,6 @@ if($count)
 else
 {
     echo " <h4> No user present </h4>";
-   // echo "<a href= \"create.html\"> No user? Create an account! </a>";
 }  
 
 ?>
