@@ -41,7 +41,7 @@ p
 {
     margin-bottom: 20px;
     border-style: none;
-    background-color: #F2F2F2;
+    background-color: #e0e0e0;
     width: 40%;
     height: 50px;
     border-radius: 15px;
@@ -96,30 +96,19 @@ p
     transition: 0.2s;
 }
 
-.logout
+.logout-btn
 {
-    width: 70px;
-    height: 70px;
-    margin-top: 10px;
-    margin-right: 10px;
-    border-radius: 20px;
-    text-align: center;
-    float: right;
-    font-size: 30px;
-    background-color: white;
     color: #FF5D5D;
-
-    cursor: pointer;
+    border: 3px solid #FF5D5D;
+    border-style: none;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
 }
 
-.logout:hover
+.logout-btn:hover
 {
-    color: white;
+    transition: 0.5s;
     background-color: #FF5D5D;
-    transition: 0.2s;
-}
-
-.logout i
-{
-    padding-top: 22px;
+    color: white;
 }
