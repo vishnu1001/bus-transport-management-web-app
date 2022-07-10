@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/signup.css">
 
     <script src="https://kit.fontawesome.com/f6ec98831b.js" crossorigin="anonymous"></script>
-
+    <script src="js/signup.js"></script>
     <title>Sign Up | Bus Management</title>
 </head>
 <body>
@@ -19,9 +19,11 @@
         <h1>Create an Account</h1>
         <p>Already have an account? <a class="sign-in" href="login.html">Sign in</a></p>
 
-        <form class="form" action="php/signup.php" method="post">
+        action="php/signup.php"
+        <form name="form" class="form"  method="post">
             <div class="details">
-                <input class="input-field" type="text" placeholder="Email" name="mail"> <br>
+                <input class="input-field" type="text" placeholder="Email" name="mail"><br>
+                
                 <input class="input-field" type="text" placeholder="First Name" name="name"> <br>
                 <input class="input-field" type="text" placeholder="Roll No" name="reg"> <br>
                 <select class="drop-down" name="course" id="1">

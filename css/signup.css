@@ -58,6 +58,16 @@ p
     text-align: center;
 }
 
+.input-field.success
+{
+    border: 2px solid #2ecc71;
+}
+
+.input-field.error
+{
+    border: 2px solid #e74c3c;
+}
+
 .submit-btn
 {
     margin-bottom: 5%;
