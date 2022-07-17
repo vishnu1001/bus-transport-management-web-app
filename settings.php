@@ -30,9 +30,6 @@
             <p>Email</p>
             <i class="fa solid fa-pen"></i>
             <input class="input-field" type="text" name="mail">
-            <p>Contact Number</p>
-            <i class="fa solid fa-pen"></i>
-            <input class="input-field" type="text" name="number"> <br>
             <br>
             <input class="btn" type="submit" value="Save Changes">
             
