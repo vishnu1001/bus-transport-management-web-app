@@ -22,17 +22,17 @@
         <h1>Settings</h1>
         
         <center>
-        <form class="form" action="">
+        <form class="form" action="php/settings_update.php" method="post">
             
             <p>Name</p>
             <i class="fa solid fa-pen"></i>
-            <input class="input-field" type="text"> 
+            <input class="input-field" type="text" name="name"> 
             <p>Email</p>
             <i class="fa solid fa-pen"></i>
-            <input class="input-field" type="text">
+            <input class="input-field" type="text" name="mail">
             <p>Contact Number</p>
             <i class="fa solid fa-pen"></i>
-            <input class="input-field" type="text"> <br>
+            <input class="input-field" type="text" name="number"> <br>
             <br>
             <input class="btn" type="submit" value="Save Changes">
             
