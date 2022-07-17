@@ -20,12 +20,13 @@ h1
     height: 500px;
     width: 400px;
     text-align: center;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     
 }
 
 .box1:hover, .box2:hover
 {
-    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
     transition: 0.3s;
     transform:scale(1.01);
 }
