@@ -1,4 +1,3 @@
-
 <?php
  include "session.php";
 
@@ -15,18 +14,18 @@ if(!$conn)
     die();
 }
 
-$new_name=$_POST['name'];
-$new_mail=$_POST['mail'];
+$door_no=$_POST['a_no'];
+$street=$_POST['s_name'];
+$landmark=$_POST['landmark'];
+$pincode=$_POST['pin'];
 
-
-$sql="UPDATE registered SET student_name='$new_name', email='$new_mail' WHERE email='$mail'";
+$sql="UPDATE registered SET door_no='$door_no', street_name='$street', landmark='$landmark', pincode='$pincode' WHERE email='$mail'";
 
 if(mysqli_query($conn,$sql))
 {
-   // print ("Data Updated Successfully");
-    session_destroy();
-    echo "<script> alert('Email has been changed. Login again') </script>";
-    echo "<script> location.href='../login.html'</script> ";
+   // print ("Address Updated Successfully");
+    echo "<script> alert('Address updated') </script>";
+    echo "<script> location.href='../homepage.php'</script> ";
     
     
 }

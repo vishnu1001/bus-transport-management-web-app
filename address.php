@@ -22,16 +22,16 @@
 
         <h1>Address</h1>
         <center>
-        <form class="form" action="">
+        <form class="form" action="php/address_update.php" method="post">
             
-            <p>Apartment no / Door no</p>
-            <input class="input-field" type="text" placeholder="Door No">
+            <p>Apartment no/Door no</p>
+            <input class="input-field" type="text" placeholder="Door No" name="a_no">
             <p>Street name</p>
-            <input class="input-field" type="text" placeholder="Street Name">
+            <input class="input-field" type="text" placeholder="Street Name" name="s_name">
             <p>Landmark</p>
-            <input class="input-field" type="text" placeholder="Landmark">
+            <input class="input-field" type="text" placeholder="Landmark" name="landmark">
             <p>Pincode</p>
-            <input class="input-field" type="text" placeholder="Pincode"> <br> <br>
+            <input class="input-field" type="text" placeholder="Pincode" name="pin"> <br> <br>
             <input class="btn" type="submit" value="Save">
         </form>
         </center>
