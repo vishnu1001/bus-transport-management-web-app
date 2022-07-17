@@ -173,8 +173,14 @@
 .fa-solid
 {
     font-size: 70px;
-    margin-top: 150px;
+    margin-top: 50px;
     color: #0B51E6;
+}
+
+.footer
+{
+    margin-top: 50px;
+    padding-bottom: 20px;
 }
 
 .fa-solid:hover
