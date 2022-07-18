@@ -106,7 +106,9 @@
 
     </div>
 
-    <img class="amrita-logo" src="images/amrita-logo.png" alt="amrita-logo">
+    <a href="./index.html">
+        <img class="amrita-logo" src="images/amrita-logo.png" alt="amrita-logo">
+    </a>
 
     <script>
         var loader = document.getElementById("preloader");

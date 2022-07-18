@@ -20,7 +20,7 @@
     
     <div class="container">
 
-        <h1>Address</h1>
+        <h1>Update Address</h1>
         <center>
         <form class="form" action="php/address_update.php" method="post">
             

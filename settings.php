@@ -22,6 +22,7 @@
         <h1>Settings</h1>
         
         <center>
+        <h2>Update information</h2>
         <form class="form" action="php/settings_update.php" method="post">
             
             <p>Name</p>

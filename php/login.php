@@ -60,7 +60,15 @@
     }
     else
     {
-        echo "<h4> No user present </h4>";
+        print("
+                
+                <script>
+                    alert(\"Email not Found\");
+                </script>
+
+                ");
+
+        print(" <script> location.href='../login.html'</script> ");
     
     }  
 
