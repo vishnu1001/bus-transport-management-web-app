@@ -23,12 +23,12 @@
         <h1>Create an Account</h1>
         <p>Already have an account? <a class="sign-in" href="login.html">Sign in</a></p>
 
-        <form name="form" class="form" action="php/signup.php" method="post">
+        <form name="form" class="form" action="php/signup.php" method="post" onsubmit="return validate()">
             <div class="details">
-                <input class="input-field" type="text" placeholder="Email" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
                 
-                <input class="input-field" type="text" placeholder="First Name" name="name"> <br>
-                <input class="input-field" type="text" placeholder="Roll No" name="reg"> <br>
+                <input class="input-field" id="mail" type="text" placeholder="Email" name="mail"><br>
+                <input class="input-field" id="name" type="text" placeholder="First Name" name="name"> <br>
+                <input class="input-field" id="reg" type="text" placeholder="Roll No" name="reg"> <br>
                 <select class="drop-down" name="course" id="1">
                     <option value="0" selected> [Choose Course] </option>
                     <option value="B.Com">B.Com</option>
@@ -51,18 +51,18 @@
                     <option value="Integrated B.Sc-M.Sc [VC]">Integrated B.Sc-M.Sc [VC]</option>
                     <option value="Integrated B.Sc-M.Sc [Chem]">Integrated B.Sc-M.Sc [Chem]</option>
                 </select> <br>
-                <input class="input-field" type="text" placeholder="Semester" name="sem"> <br>
-                <input class="input-field" type="password" placeholder="Password" name="pass"> <br> 
+                <input class="input-field" id="sem" type="text" placeholder="Semester" name="sem"> <br>
+                <input class="input-field" id="pass" type="password" placeholder="Password" name="pass"> <br> 
             </div>
     
             <div class="details">
                 <h1>Address Details</h1>
-                <input class="input-field" type="text" placeholder="Door No" name="door_no"> <br>
-                <input class="input-field" type="text" placeholder="Street Name" name="street_name"> <br>
-                <input class="input-field" type="text" placeholder="Landmark" name="landmark"> <br>
-                <input class="input-field" type="text" placeholder="Pincode" name="pincode"> <br>
+                <input class="input-field" id="door_no" type="text" placeholder="Door No" name="door_no"> <br>
+                <input class="input-field" id="street_name" type="text" placeholder="Street Name" name="street_name"> <br>
+                <input class="input-field" id="landmark" type="text" placeholder="Landmark" name="landmark"> <br>
+                <input class="input-field" id="pincode" type="text" placeholder="Pincode" name="pincode"> <br>
             </div>
-
+            <p id="error" ></p> <br>
             <input class="submit-btn" type="submit" value="Sign Up >">
         </form>
         </center>
