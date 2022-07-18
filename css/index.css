@@ -198,3 +198,39 @@
 {
     color: black;
 }
+
+.emoji
+{
+    text-decoration: none;
+    cursor:grab;
+}
+.emoji:hover span
+{
+    display: none;
+}
+
+.emoji:hover::before
+{
+    content: " 👀 ";
+}
+
+body
+{
+    overflow: overlay;
+}
+
+body::-webkit-scrollbar 
+{
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track 
+{
+    background: transparent; 
+}
+
+body::-webkit-scrollbar-thumb 
+{
+    background-color: #ECB365;
+    border-radius: 50px;
+}

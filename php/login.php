@@ -1,8 +1,19 @@
 
 <?php
-
     session_start();
+?>
 
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <link rel="stylesheet" href="../css/fun.css">
+    </head> 
+</html>
+
+<?php
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -26,15 +37,17 @@
     {   
         if(isset($_SESSION['mail']))
         {
-            print("Loggin in...");
             print("
-            
-            <html>
-                <head>
-                    <meta http-equiv=\"refresh\" content=\"1; url = ../homepage.php\">
-                </head>
-            </html>
-            
+            <center>
+                <meta http-equiv=\"refresh\" content=\"2; url = ../homepage.php\">
+                <h1>Loggin in...</h1>
+                <lottie-player src='https://assets5.lottiefiles.com/private_files/lf30_rn7m4pd6.json'  background='transparent'  speed='1'  style='width: 600px; height: 600px;'  loop  autoplay></lottie-player>
+            </center>
+            <div class='lorem'>
+                <a href='../js/lorem.html' target='_blank'>
+                    <p>🎃</p>
+                </a>
+            </div>
             ");
         }
         else
@@ -49,7 +62,7 @@
                 print("
                 
                 <script>
-                    alert(\"Email or Password incorrect\");
+                    alert(\"Email or Password incorrect 😕\");
                 </script>
 
                 ");
@@ -63,7 +76,7 @@
         print("
                 
                 <script>
-                    alert(\"Email not Found\");
+                    alert(\"Email not Found 😕\");
                 </script>
 
                 ");
