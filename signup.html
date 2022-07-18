@@ -25,9 +25,21 @@
         <form name="form" class="form" action="php/signup.php" method="post" onsubmit="return validate()">
             <div class="details">
                 
-                <input class="input-field" id="mail" type="text" placeholder="Email" name="mail"><br>
-                <input class="input-field" id="name" type="text" placeholder="First Name" name="name"> <br>
-                <input class="input-field" id="reg" type="text" placeholder="Roll No" name="reg"> <br>
+                <input class="input-field" id="mail" type="text" placeholder="Email" name="mail"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        oninvalid="this.setCustomValidity('Sorry , we dont recognize this email.')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')"><br>
+                <input class="input-field" id="name" type="text" placeholder="First Name" name="name"
+                        pattern="[a-z]{5,}$"
+                        oninvalid="this.setCustomValidity('Minimum 5 characters')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')"> <br>
+                <input class="input-field" id="reg" type="text" placeholder="Roll No" name="reg"
+                        pattern="MY(.)SC(.)[A-Z0-9]{10,}"
+                        oninvalid="this.setCustomValidity('MY.SC.##########')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')"> <br>
                 <select class="drop-down" name="course" id="1">
                     <option value="0" selected> [Choose Course] </option>
                     <option value="B.Com">B.Com</option>
@@ -51,7 +63,11 @@
                     <option value="Integrated B.Sc-M.Sc [Chem]">Integrated B.Sc-M.Sc [Chem]</option>
                 </select> <br>
                 <input class="input-field" id="sem" type="text" placeholder="Semester" name="sem"> <br>
-                <input class="input-field" id="pass" type="password" placeholder="Password" name="pass"> <br> 
+                <input class="input-field" id="pass" type="password" placeholder="Password" name="pass"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$"
+                        oninvalid="this.setCustomValidity('Minimum 5 characters and 1 number:')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')"> <br> 
             </div>
     
             <div class="details">
@@ -59,7 +75,11 @@
                 <input class="input-field" id="door_no" type="text" placeholder="Door No" name="door_no"> <br>
                 <input class="input-field" id="street_name" type="text" placeholder="Street Name" name="street_name"> <br>
                 <input class="input-field" id="landmark" type="text" placeholder="Landmark" name="landmark"> <br>
-                <input class="input-field" id="pincode" type="text" placeholder="Pincode" name="pincode"> <br>
+                <input class="input-field" id="pincode" type="text" placeholder="Pincode" name="pincode"
+                        pattern="[0-9]{6}"
+                        oninvalid="this.setCustomValidity('######')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')"> <br>
             </div>
             <p id="error" ></p> <br>
             <input class="submit-btn" type="submit" value="Sign Up >">

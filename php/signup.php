@@ -1,7 +1,7 @@
 
 <?php
 
-    include "login.php";
+    
 
     $servername="localhost";
     $username="root";
@@ -27,7 +27,7 @@
     $landmark=$_POST['landmark'];
     $pincode=$_POST['pincode'];
 
-    $sql="INSERT INTO registered (email,student_name,pass_word,reg_no,course,sem,door_no,street_name,landmark,pincode) VALUES
+    $sql="INSERT INTO registered (email, student_name, pass_word, reg_no, course, sem, door_no, street_name, landmark, pincode) VALUES
           ('$mail','$name','$pass','$reg','$course','$sem','$door_no','$street_name','$landmark','$pincode')";
 
     $result = mysqli_query($conn,$sql);
@@ -59,6 +59,7 @@
         echo " Failed to register! " .mysqli_error($conn);
     }
 
+    include "login.php";
     mysqli_close($conn);
 
 ?>

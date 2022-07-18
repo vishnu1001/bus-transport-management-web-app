@@ -27,10 +27,18 @@
             
             <p>Name</p>
             <i class="fa solid fa-pen"></i>
-            <input class="input-field" type="text" name="name"> 
+            <input class="input-field" type="text" name="name"
+                        pattern="[a-z]{5,}$"
+                        oninvalid="this.setCustomValidity('Minimum 5 characters')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')"> 
             <p>Email</p>
             <i class="fa solid fa-pen"></i>
-            <input class="input-field" type="text" name="mail">
+            <input class="input-field" type="text" name="mail"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        oninvalid="this.setCustomValidity('Sorry , we dont recognize this email.')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        oninput="setCustomValidity(' ')">
             <br>
             <input class="btn" type="submit" value="Save Changes">
             

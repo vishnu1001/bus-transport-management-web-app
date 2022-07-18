@@ -14,19 +14,18 @@ function validate()
 
     if(email.value == "")
     {
-        //document.getElementById("error").innerHTML = "Email field is empty";
+        email.focus();
         error.innerHTML = "Email field is empty";
-        document.getElementById("mail").focus();
         return false;
     }
-    var mailid = document.form.mail.value;
-    atpos = mailid.indexOf("@");
-    dotpos = mailid.lastIndexOf(".");
-    if(atpos < 1 || (dotpos - atpos < 6) || mailid.lastIndexOf("g") != atpos+1)
-    {
-        error.innerHTML = "Unknown Email ID";
-        return false;
-    }
+    // var mailid = document.form.mail.value;
+    // atpos = mailid.indexOf("@");
+    // dotpos = mailid.lastIndexOf(".");
+    // if(atpos < 1 || (dotpos - atpos < 6) || mailid.lastIndexOf("g") != atpos+1)
+    // {
+    //     error.innerHTML = "Unknown Email ID";
+    //     return false;
+    // }
     if(name.value == "")
     {
         error.innerHTML = "Name field is empty";
