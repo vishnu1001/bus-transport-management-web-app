@@ -79,6 +79,4 @@ function validate()
         return false;
     }
     
-
-    
 }

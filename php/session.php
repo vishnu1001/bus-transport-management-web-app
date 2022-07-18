@@ -1,3 +1,4 @@
+
 <?php
     session_start();
 
@@ -24,6 +25,6 @@
     else
     {
         print("<script>alert('Your Logged out...')</script>");
-        print("<script>location.href='login.html'</script>");
+        print("<script>location.href='./login.html'</script>");
     }
 ?>

@@ -1,3 +1,4 @@
+
 <?php
 
     session_start();
@@ -6,7 +7,6 @@
     $username = "root";
     $password = "";
     $database = "amrita_bus";
-
 
     $mail = $_POST['mail'];
     $pass = $_POST['pass'];
@@ -31,7 +31,7 @@
             
             <html>
                 <head>
-                    <meta http-equiv=\"refresh\" content=\"1;url=../homepage.php\">
+                    <meta http-equiv=\"refresh\" content=\"1; url = ../homepage.php\">
                 </head>
             </html>
             
@@ -60,7 +60,7 @@
     }
     else
     {
-        echo " <h4> No user present </h4>";
+        echo "<h4> No user present </h4>";
     
     }  
 

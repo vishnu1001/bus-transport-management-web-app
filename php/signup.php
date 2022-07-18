@@ -1,6 +1,8 @@
 
 <?php
 
+    include "login.php";
+
     $servername="localhost";
     $username="root";
     $password="";
@@ -28,30 +30,35 @@
     $sql="INSERT INTO registered (email,student_name,pass_word,reg_no,course,sem,door_no,street_name,landmark,pincode) VALUES
           ('$mail','$name','$pass','$reg','$course','$sem','$door_no','$street_name','$landmark','$pincode')";
 
-    if(mysqli_query($conn,$sql))
-    {
-            printf("
-            
-            <html>
-            <head>
-            <meta http-equiv=\"refresh\" content=\"2;url=../homepage.html\">
-            </head>
-            <body>
-                <center>
-                    <br>
-                    <h1>Successfully Registered</h1> <br>
-                    <p>Opening Dashboard in 2 seconds...</p>
-                </center>
-            </body>
-            </html>
+    $result = mysqli_query($conn,$sql);
 
-            ");
+    if($result)
+    {
+        printf("
+        
+        <html>
+        <head>
+        <meta http-equiv=\"refresh\" content=\"1; url = ../homepage.php\">
+        </head>
+        <body>
+            <center>
+                <br>
+                <h1>Successfully Registered</h1>
+                <br>
+                <p>Opening Creating Dashboard...</p>
+            </center>
+        </body>
+        </html>
+
+        ");
+
     }
+    
     else
     {
         echo " Failed to register! " .mysqli_error($conn);
     }
 
     mysqli_close($conn);
-    
+
 ?>
