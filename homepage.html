@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/homepage.css">
 
+    <script src="js/perloader.js"></script>
     <script src="https://kit.fontawesome.com/f6ec98831b.js" crossorigin="anonymous"></script>
 
     <title>Homepage | Bus Management</title>
@@ -113,30 +114,11 @@
             </div>
         </div>
 
+        <a href="index.html">
+            <img class="amrita-logo" src="images/amrita-logo.png" alt="amrita-logo">  
+        </a>
+
     </div>
-
-    <script>
-        var loader = document.getElementById("preloader");
-        const fadeEffect = setInterval(() => 
-        {
-            if (!preloader.style.opacity) 
-            {
-                preloader.style.opacity = 1;
-            }
-            if (preloader.style.opacity > 0) 
-            {
-                preloader.style.opacity -= 0.1;
-            } 
-            else 
-            {
-                clearInterval(fadeEffect);
-                loader.style.display = "none";
-            }
-            
-        }, 100);
-
-        window.addEventListener('load', fadeEffect);
-    </script>
     
 </body>
 </html>
