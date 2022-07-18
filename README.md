@@ -1,34 +1,21 @@
-# bus_transport_website
-Amrita bus transportation website
+This website is for students who live far away and get bus facilities. The student can track his bus and know the current location
 
-// Steps:
+This project is build from scratch with the knowledge gained from classes and internet
 
-1. Stage changes
-2. Commit changes
-3. push (or) pull
+Created by Vishnu N and Saketh P of INT MCA SEM 4 students
 
+Git Repo: https://github.com/vishnu1001/Bus-Transport-Website.git
 
-Commands:
+Reference links:
 
-// Set Email and Username
-> git config --global user.name "name"
+https://www.youtube.com/
+https://github.com/
+https://colorhunt.co/
+https://dribbble.com/
+https://fonts.google.com/
+https://fontawesome.com/icons
 
-> git congif --global user.email "example@gmail.com"
+https://www.w3schools.com/
+https://www.javatpoint.com/
+https://www.geeksforgeeks.org/
 
-// Initialize Repository
-> git init 
-
-> git init my-project
-
-> git start
-
-// Push remote repository:
-> git remote add origin https://github.com/repo-name
-
-> git push -u origin master
-
-// Pull remote repository
-
-// Clone Repository
-
-// New Branches
